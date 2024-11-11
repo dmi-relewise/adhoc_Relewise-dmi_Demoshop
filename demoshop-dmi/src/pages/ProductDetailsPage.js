@@ -1,28 +1,40 @@
-// src/pages/ProductDetailsPage.js
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
+import jsonData from '../product.json';
+import getUser from '../userFile';
+import {Tracker} from '@relewise/client';
 
 const ProductDetailsPage = () => {
-  const { id } = useParams();
+  const {productId} = useParams(); 
+  console.log(productId);
+  const products = JSON.parse(JSON.stringify(jsonData)); 
+  const product = products.find(item => item.productId === productId);
+
+  const tracker = new Tracker('c77f1e38-9102-46c9-af43-1effea7621cb', 'Ixs:iMcj_BW%z2B', {
+    serverUrl: 'https://sandbox-api.relewise.com/',
+  }); 
+
+  useEffect(() => {
+    const pdpTracker = async () => {
+      try {
+        await tracker.trackProductView({
+          productId,
+          user: getUser(),
+      });
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
   
-  const products = [
-    { id: 1, name: 'Product 1', price: 29.99, image: 'https://picsum.photos/200' },
-    { id: 2, name: 'Product 2', price: 19.99, image: 'https://picsum.photos/200' },
-    { id: 3, name: 'Product 3', price: 49.99, image: 'https://picsum.photos/200' },
-    { id: 4, name: 'Product 4', price: 39.99, image: 'https://picsum.photos/200' },
-  ];
-
-  const product = products.find((product) => product.id === parseInt(id));
-
-
-
+    pdpTracker();
+  }, []);
+  
   return (
-    <div>
-      <h1>{product.name}</h1>
-      <img src={product.image} alt={product.name} />
-      <p>{product.description}</p>
-      <p>${product.price}</p>
-      <button>Add to Cart</button>
+    <div className='container p-5 text-center'>
+      <img src="https://picsum.photos/800" alt="image" />
+      <p>{product.productName}</p>
+      <p>{product.salesPrice}</p>
+      <button className='btn btn-dark'>Add to Cart</button>
     </div>
   );
 };
