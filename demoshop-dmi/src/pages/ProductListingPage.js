@@ -31,13 +31,7 @@ const ProductListingPage = () => {
   }
 
   const searcher = new Searcher(
-    process.env.REACT_APP_RELEWISE_KEY_1,
-    process.env.REACT_APP_RELEWISE_KEY_2,
-    {
-      serverUrl: process.env.REACT_APP_RELEWISE_URL,
-    }
-  );
-
+    process.env.REACT_APP_RELEWISE_KEY_1,  process.env.REACT_APP_RELEWISE_KEY_2, {serverUrl: process.env.REACT_APP_RELEWISE_URL});
 
   useEffect(() => {
     const loadData = async () => {

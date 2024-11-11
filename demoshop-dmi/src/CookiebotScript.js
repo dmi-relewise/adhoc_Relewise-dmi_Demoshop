@@ -8,7 +8,7 @@ const CookiebotScript = () => {
     // Set up Cookiebot script attributes
     script.id = "Cookiebot";
     script.src = "https://consent.cookiebot.com/uc.js";
-    script.setAttribute('data-cbid', process.env.REACT_APP_COOKIEBOT_ID);  // Replace with your actual Cookiebot ID
+    script.setAttribute('data-cbid', process.env.REACT_APP_COOKIEBOT_ID);  
     script.type = "text/javascript";
     script.async = true;
     

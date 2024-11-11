@@ -1,5 +1,5 @@
 import { Integrator, ProductUpdateBuilder } from '@relewise/integrations';
-import { DataValueFactory, MultilingualDataValue } from '@relewise/client';
+import { DataValueFactory} from '@relewise/client';
 import jsonData from './product.json';
 
 const integrator = new Integrator(process.env.REACT_APP_RELEWISE_KEY_1,  process.env.REACT_APP_RELEWISE_KEY_2,  {serverUrl: process.env.REACT_APP_RELEWISE_URL, });
