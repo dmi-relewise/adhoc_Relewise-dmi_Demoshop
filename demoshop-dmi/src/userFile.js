@@ -1,6 +1,7 @@
 import {UserFactory} from '@relewise/client';
 
 const getUser = () => {
+    
     return window.CookieConsent &&
            window.CookieConsent.consent &&
            window.CookieConsent.consent.marketing &&
@@ -8,5 +9,7 @@ const getUser = () => {
       ? UserFactory.byTemporaryId(window.CookieConsent.consentID)
       : UserFactory.anonymous();
   };
+
+  
 
   export default getUser;

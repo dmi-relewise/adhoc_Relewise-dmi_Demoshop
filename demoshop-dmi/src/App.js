@@ -1,30 +1,36 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Pages
-import Frontpage from './pages/Frontpage';
-import SearchResultsPage from './pages/SearchResultsPage';
-import ProductListingPage from './pages/ProductListingPage';
-import ProductDetailsPage from './pages/ProductDetailsPage';
-import CartPage from './pages/CartPage';
-import OrderReceiptPage from './pages/OrderReceiptPage';
-import Footer from './components/Footer';
-import { createProducts } from './relewiseProduct';
-import CookiebotScript from './CookiebotScript';
-import Header from './components/Header';
+import Frontpage from "./pages/Frontpage";
+import SearchResultsPage from "./pages/SearchResultsPage";
+import ProductListingPage from "./pages/ProductListingPage";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
+import CartPage from "./pages/CartPage";
+import OrderReceiptPage from "./pages/OrderReceiptPage";
+import Footer from "./components/Footer";
+import { createProducts } from "./relewiseProduct";
+import CookiebotScript from "./CookiebotScript";
+import Header from "./components/Header";
+
 function App() {
-    // useEffect(() => {
-    //   const fetchData = async () => {
-    //     try {
-    //       await createProducts();
-    //     } catch (error) {
-    //       console.error("Error fetching data:", error);
-    //     }
-    //   };
-  
-    //   fetchData();
-    // }, []); 
-    CookiebotScript();
+  const updateProductsOnRelewise = false;
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        await createProducts();
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    updateProductsOnRelewise
+      ? fetchData()
+      : console.log("Products not updated");
+  }, []);
+
+  CookiebotScript();
   return (
     <Router>
       <div className="App">
@@ -37,7 +43,7 @@ function App() {
           <Route path="/cart" element={<CartPage />} />
           <Route path="/order-receipt" element={<OrderReceiptPage />} />
         </Routes>
-        <Footer /> {/* Footer component */}
+        <Footer />
       </div>
     </Router>
   );
