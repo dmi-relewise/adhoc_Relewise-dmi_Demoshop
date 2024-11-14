@@ -6,26 +6,14 @@ import {
 } from "@relewise/client";
 import getUser from "../userFile";
 import { Tracker } from "@relewise/client";
-
-const recommender = new Recommender(
-  process.env.REACT_APP_RELEWISE_KEY_1,
-  process.env.REACT_APP_RELEWISE_KEY_2,
-  { serverUrl: process.env.REACT_APP_RELEWISE_URL }
-);
-
-  const tracker = new Tracker(
-    process.env.REACT_APP_RELEWISE_KEY_1,
-    process.env.REACT_APP_RELEWISE_KEY_2,
-    { serverUrl: process.env.REACT_APP_RELEWISE_URL }
-  );
+import { Link } from "react-router-dom";
+import { tracker, recommender } from "../utils/Utils";
 
 const CartPage = () => {
   const settings = getSettings("Cart Page");
   const [cartRecc, setCartRecc] = useState([]);
 
   const [cartItems, setCartItems] = useState([]);
-  const [subTot, setSubTot] = useState(Number);
-
   const productsArray = cartItems.map((item) => ({
     productId: item.productId,
   }));
@@ -65,14 +53,14 @@ const CartPage = () => {
     const lineItems = cartItems.map((item) => ({
       lineTotal: parseFloat(item.salesPrice),
       productId: item.productId,
-      quantity: item.quantity || 1,
+      quantity: item.quantity,
     }));
 
     console.log(lineItems, "lineItems");
 
     // calculate the subtotal
     const subtotal = lineItems
-      .reduce((sum, item) => sum + item.lineTotal, 0)
+      .reduce((sum, item) => sum + item.lineTotal * item.quantity, 0)
       .toFixed(2);
     
 
@@ -97,7 +85,7 @@ const CartPage = () => {
       alert("There was an issue tracking the order.");
     }
   };
-const subtotal = cartItems.reduce((sum, item) => sum + item.salesPrice, 0);
+const subtotal = cartItems.reduce((sum, item) => sum + item.salesPrice * item.quantity.toFixed(2) , 0);
 
   return (
     <div className="container p-3">
@@ -108,13 +96,17 @@ const subtotal = cartItems.reduce((sum, item) => sum + item.salesPrice, 0);
         <div className="d-flex flex-wrap">
           {cartItems.map((item, index) => (
             <div key={index} className="mb-2 p-3 w-25">
-              <img
-                src="/Ephoto.jpeg"
-                alt={item.productName}
-                className="w-100"
-              />
+              <Link to={`/product/${item.productId}`}>
+                <img
+                  src="/Ephoto.jpeg"
+                  alt={item.productName}
+                  className="w-100"
+                />
+              </Link>
               <p className="card-title fw-bold">{item.productName}</p>
-              <p className="card-text fw-bold">{item.salesPrice}</p>
+              <p className="card-text fw-bold">
+                {item.salesPrice} - ({item.quantity}x)
+              </p>
             </div>
           ))}
         </div>
@@ -131,11 +123,13 @@ const subtotal = cartItems.reduce((sum, item) => sum + item.salesPrice, 0);
         {Array.isArray(cartRecc) &&
           cartRecc.map((item, index) => (
             <div key={index} className="mb-2 p-3 w-25">
-              <img
-                src="/Ephoto.jpeg"
-                alt={item.displayName}
-                className="w-100"
-              />
+              <Link to={`/product/${item.productId}`}>
+                <img
+                  src="/Ephoto.jpeg"
+                  alt={item.displayName}
+                  className="w-100"
+                />
+              </Link>
               <p className="card-title fw-bold">{item.displayName}</p>
               <p className="card-text fw-bold">{item.salesPrice}</p>
             </div>
