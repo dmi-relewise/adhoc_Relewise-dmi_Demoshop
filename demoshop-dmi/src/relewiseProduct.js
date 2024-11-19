@@ -28,12 +28,8 @@ export async function createProducts() {
         // to the Multilingual::create method.
         { language: "en", value: element.productName },
       ])
-      .salesPrice([
-        { currency: "usd", amount: element.salesPrice.replace("$", "") },
-      ])
-      .listPrice([
-        { currency: "usd", amount: element.listPrice.replace("$", "") },
-      ])
+      .salesPrice([{ currency: "usd", amount: element.salesPrice.replace("$", "") }])
+      .listPrice([{ currency: "usd", amount: element.listPrice.replace("$", "") }])
 
       .brand({
         id: element.brandName, // Displayname can be left out, but Id is required
@@ -44,13 +40,12 @@ export async function createProducts() {
         // We only set the English translation in this example
         // but more can be set by parsing more MultilingualValue
         // to the Multilingual::create method.
-        ShortDescription: DataValueFactory.multilingual([
-          { language: "en", value: element.shortDescription },
-        ]),
+        ShortDescription: DataValueFactory.multilingual([{ language: "en", value: element.shortDescription }]),
         // Important to set this timestamp to
         // the exact same value for all products
         ImportedAt: DataValueFactory.number(date),
         InStock: DataValueFactory.boolean(element.inStock === "in stock"),
+        ImageUrl: DataValueFactory.multilingual([{ language: "en", value: element.ImageUrl }]),
         // Add any additional fields you would want returned from Relewise
       });
 

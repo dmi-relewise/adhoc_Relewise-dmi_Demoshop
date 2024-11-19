@@ -8,7 +8,8 @@
         "shortDescription": "Full HD Smart TV",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>TVs"
+        "category": "Electronics>TVs",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/6701baba-db84-4b64-8e21-8361af57a795.webp"
     },
     {
         "productId": "2",
@@ -19,7 +20,8 @@
         "shortDescription": "Portable Bluetooth Speaker",
         "inStock": "in stock",
         "color": "Red",
-        "category": "Electronics>Audio>Speakers"
+        "category": "Electronics>Audio>Speakers",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/dd3ae495-ee11-46e9-9056-b87142e3cf32.webp"
     },
     {
         "productId": "3",
@@ -30,7 +32,8 @@
         "shortDescription": "True Wireless Earbuds",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Audio>Headphones"
+        "category": "Electronics>Audio>Headphones",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/428e3c12-098f-4813-a135-3deee9780fee.png"
     },
     {
         "productId": "4",
@@ -41,7 +44,8 @@
         "shortDescription": "Intel Core i5, 8GB RAM",
         "inStock": "in stock",
         "color": "Silver",
-        "category": "Electronics>Computers>Laptops"
+        "category": "Electronics>Computers>Laptops",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/51c006fd-087b-492a-8e81-641cf6770f94.webp"
     },
     {
         "productId": "5",
@@ -52,7 +56,8 @@
         "shortDescription": "4K HDR Gaming Console",
         "inStock": "out of stock",
         "color": "Black",
-        "category": "Electronics>Gaming"
+        "category": "Electronics>Gaming",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/4e1dd698-6d72-44eb-b61d-2f59f5d1f34a.webp"
     },
     {
         "productId": "6",
@@ -63,7 +68,8 @@
         "shortDescription": "GPS + Cellular, Heart Rate",
         "inStock": "in stock",
         "color": "Gold",
-        "category": "Electronics>Wearables>Smartwatches"
+        "category": "Electronics>Wearables>Smartwatches",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/0849846e-a8b8-495c-9047-f8fd04b6e3ab.png"
     },
     {
         "productId": "7",
@@ -74,7 +80,8 @@
         "shortDescription": "24.2 MP, Full HD Video",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Cameras>DSLRs"
+        "category": "Electronics>Cameras>DSLRs",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/5246dc23-54ac-4649-b02f-b3193666ede6.webp"
     },
     {
         "productId": "8",
@@ -85,7 +92,8 @@
         "shortDescription": "Dual Band Gigabit Router",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Networking>Routers"
+        "category": "Electronics>Networking>Routers",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d25f69c8-588d-4105-a194-be79cc9bf221.webp"
     },
     {
         "productId": "9",
@@ -96,7 +104,9 @@
         "shortDescription": "Optical Wireless Mouse",
         "inStock": "in stock",
         "color": "Gray",
-        "category": "Electronics>Computer Accessories>Mice"
+        "category": "Electronics>Computer Accessories>Mice",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d25f69c8-588d-4105-a194-be79cc9bf221.webp"
+        
     },
     {
         "productId": "10",
@@ -107,7 +117,8 @@
         "shortDescription": "20000mAh Power Bank",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Mobile Accessories>Chargers"
+        "category": "Electronics>Mobile Accessories>Chargers",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d25f69c8-588d-4105-a194-be79cc9bf221.webp"
     },
     {
         "productId": "11",
@@ -118,7 +129,8 @@
         "shortDescription": "Noise Cancelling Headphones",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Audio>Headphones"
+        "category": "Electronics>Audio>Headphones",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/f016fbc9-c271-457c-8959-66b4a1f939df.webp"
     },
     {
         "productId": "12",
@@ -129,7 +141,8 @@
         "shortDescription": "Wi-Fi Enabled Outlet Plug",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Smart Home>Smart Plugs"
+        "category": "Electronics>Smart Home>Smart Plugs",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d11c36cb-d3cf-411d-80a9-8710bd376b5a.webp"
     },
     {
         "productId": "13",
@@ -140,7 +153,8 @@
         "shortDescription": "2TB USB 3.0 Portable HDD",
         "inStock": "in stock",
         "color": "Blue",
-        "category": "Electronics>Storage>External Hard Drives"
+        "category": "Electronics>Storage>External Hard Drives",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d11c36cb-d3cf-411d-80a9-8710bd376b5a.webp"
     },
     {
         "productId": "14",
@@ -151,7 +165,8 @@
         "shortDescription": "Android Tablet",
         "inStock": "in stock",
         "color": "Silver",
-        "category": "Electronics>Computers>Tablets"
+        "category": "Electronics>Computers>Tablets",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d11c36cb-d3cf-411d-80a9-8710bd376b5a.webp"
     },
     {
         "productId": "15",
@@ -162,7 +177,8 @@
         "shortDescription": "Ergonomic Bluetooth Keyboard",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Computer Accessories>Keyboards"
+        "category": "Electronics>Computer Accessories>Keyboards",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d11c36cb-d3cf-411d-80a9-8710bd376b5a.webp"
     },
     {
         "productId": "16",
@@ -173,7 +189,8 @@
         "shortDescription": "2.1 Channel Sound System",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Audio>Soundbars"
+        "category": "Electronics>Audio>Soundbars",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d11c36cb-d3cf-411d-80a9-8710bd376b5a.webp"
     },
     {
         "productId": "17",
@@ -184,7 +201,8 @@
         "shortDescription": "Noise Isolating Earphones",
         "inStock": "in stock",
         "color": "Red",
-        "category": "Electronics>Audio>Headphones"
+        "category": "Electronics>Audio>Headphones",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d11c36cb-d3cf-411d-80a9-8710bd376b5a.webp"
     },
     {
         "productId": "18",
@@ -195,7 +213,8 @@
         "shortDescription": "HD Indoor/Outdoor Camera",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Security Cameras"
+        "category": "Electronics>Security Cameras",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/1d9a8c41-3747-4c0e-877c-3ada2b20af2f.webp"
     },
     {
         "productId": "19",
@@ -206,7 +225,8 @@
         "shortDescription": "Wi-Fi Enabled Thermostat",
         "inStock": "in stock",
         "color": "Silver",
-        "category": "Electronics>Smart Home>Thermostats"
+        "category": "Electronics>Smart Home>Thermostats",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d11c36cb-d3cf-411d-80a9-8710bd376b5a.webp"
     },
     {
         "productId": "20",
@@ -217,7 +237,8 @@
         "shortDescription": "RGB Mechanical Keyboard",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Gaming>Keyboards"
+        "category": "Electronics>Gaming>Keyboards",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d11c36cb-d3cf-411d-80a9-8710bd376b5a.webp"
     },
     {
         "productId": "21",
@@ -228,7 +249,8 @@
         "shortDescription": "Virtual Reality Headset",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Gaming>VR"
+        "category": "Electronics>Gaming>VR",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d11c36cb-d3cf-411d-80a9-8710bd376b5a.webp"
     },
     {
         "productId": "22",
@@ -239,7 +261,8 @@
         "shortDescription": "1TB USB 3.1 External SSD",
         "inStock": "in stock",
         "color": "Blue",
-        "category": "Electronics>Storage>External Solid State Drives"
+        "category": "Electronics>Storage>External Solid State Drives",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/d11c36cb-d3cf-411d-80a9-8710bd376b5a.webp"
     },
     {
         "productId": "23",
@@ -250,7 +273,8 @@
         "shortDescription": "Wi-Fi Smart Speaker",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Audio>Speakers"
+        "category": "Electronics>Audio>Speakers",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/c87f5789-a373-4bae-86c5-ca39d769b7a7.webp"
     },
     {
         "productId": "24",
@@ -261,8 +285,9 @@
         "shortDescription": "Heart Rate Monitor, Sleep Tracking",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Wearables>Fitness Trackers"
-    },
+        "category": "Electronics>Wearables>Fitness Trackers",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/c87f5789-a373-4bae-86c5-ca39d769b7a7.webp"
+        },
     {
         "productId": "25",
         "productName": "All-in-One PC",
@@ -272,7 +297,8 @@
         "shortDescription": "23.8\" Full HD, Intel Core i7",
         "inStock": "in stock",
         "color": "Silver",
-        "category": "Electronics>Computers>All-in-One PCs"
+        "category": "Electronics>Computers>All-in-One PCs",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/ba283713-3098-4e6c-8b52-c6c4404f73a0.webp"
     },
     {
         "productId": "26",
@@ -283,7 +309,8 @@
         "shortDescription": "Noise-Canceling Earbuds",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Audio>Headphones"
+        "category": "Electronics>Audio>Headphones",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/ba283713-3098-4e6c-8b52-c6c4404f73a0.webp"
     },
     {
         "productId": "27",
@@ -294,7 +321,8 @@
         "shortDescription": "Apple M1 Chip, 8GB RAM",
         "inStock": "in stock",
         "color": "Space Gray",
-        "category": "Electronics>Computers>Laptops"
+        "category": "Electronics>Computers>Laptops",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/ba283713-3098-4e6c-8b52-c6c4404f73a0.webp"
     },
     {
         "productId": "28",
@@ -305,7 +333,8 @@
         "shortDescription": "Voice-Activated Speaker",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Audio>Speakers"
+        "category": "Electronics>Audio>Speakers",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/ba283713-3098-4e6c-8b52-c6c4404f73a0.webp"
     },
     {
         "productId": "29",
@@ -316,7 +345,8 @@
         "shortDescription": "Bluetooth Ergonomic Mouse",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Computer Accessories>Mice"
+        "category": "Electronics>Computer Accessories>Mice",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/bd6b814c-bf18-4a73-ab10-94b5c753e981.webp"
     },
     {
         "productId": "30",
@@ -327,7 +357,8 @@
         "shortDescription": "4K Waterproof Sports Camera",
         "inStock": "in stock",
         "color": "Silver",
-        "category": "Electronics>Cameras>Action Cameras"
+        "category": "Electronics>Cameras>Action Cameras",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/bd6b814c-bf18-4a73-ab10-94b5c753e981.webp"
     },
     {
         "productId": "31",
@@ -338,7 +369,8 @@
         "shortDescription": "27\" Full HD, 144Hz Refresh Rate",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Computers>Monitors"
+        "category": "Electronics>Computers>Monitors",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/533a8547-c03a-45f5-bf09-8505fe6834d9.webp"
     },
     {
         "productId": "32",
@@ -349,7 +381,8 @@
         "shortDescription": "Backlit Mechanical Keyboard",
         "inStock": "in stock",
         "color": "RGB",
-        "category": "Electronics>Computer Accessories>Keyboards"
+        "category": "Electronics>Computer Accessories>Keyboards",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/533a8547-c03a-45f5-bf09-8505fe6834d9.webp"
     },
     {
         "productId": "33",
@@ -360,7 +393,8 @@
         "shortDescription": "Dolby Atmos Soundbar",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Audio>Soundbars"
+        "category": "Electronics>Audio>Soundbars",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/533a8547-c03a-45f5-bf09-8505fe6834d9.webp"
     },
     {
         "productId": "34",
@@ -371,7 +405,8 @@
         "shortDescription": "Wi-Fi Enabled Door Lock",
         "inStock": "in stock",
         "color": "Silver",
-        "category": "Electronics>Smart Home>Smart Locks"
+        "category": "Electronics>Smart Home>Smart Locks",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/533a8547-c03a-45f5-bf09-8505fe6834d9.webp"
     },
     {
         "productId": "35",
@@ -382,7 +417,8 @@
         "shortDescription": "1TB USB 3.1 Portable SSD",
         "inStock": "in stock",
         "color": "Blue",
-        "category": "Electronics>Storage>External Solid State Drives"
+        "category": "Electronics>Storage>External Solid State Drives",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/3a2b5251-d170-4f07-91a4-88ee5fd98c84.webp"
     },
     {
         "productId": "36",
@@ -393,7 +429,8 @@
         "shortDescription": "Qi-Certified Charging Pad",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Mobile Accessories>Chargers"
+        "category": "Electronics>Mobile Accessories>Chargers",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/3a2b5251-d170-4f07-91a4-88ee5fd98c84.webp"
     },
     {
         "productId": "37",
@@ -404,7 +441,8 @@
         "shortDescription": "High-Fidelity Headphones",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Audio>Headphones"
+        "category": "Electronics>Audio>Headphones",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/3a2b5251-d170-4f07-91a4-88ee5fd98c84.webp"
     },
     {
         "productId": "38",
@@ -415,7 +453,8 @@
         "shortDescription": "Video Doorbell with HD Camera",
         "inStock": "in stock",
         "color": "Satin Nickel",
-        "category": "Electronics>Smart Home>Video Doorbells"
+        "category": "Electronics>Smart Home>Video Doorbells",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/3a2b5251-d170-4f07-91a4-88ee5fd98c84.webp"
     },
     {
         "productId": "39",
@@ -426,7 +465,8 @@
         "shortDescription": "Full HD LED Projector",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Projectors"
+        "category": "Electronics>Projectors",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/3a2b5251-d170-4f07-91a4-88ee5fd98c84.webp"
     },
     {
         "productId": "40",
@@ -437,7 +477,8 @@
         "shortDescription": "Hands-Free Car Adapter",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Car Accessories>"
+        "category": "Electronics>Car Accessories>",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/80249b4d-595e-4963-9139-6f39d166ed02.webp"
     },
     {
         "productId": "41",
@@ -448,7 +489,8 @@
         "shortDescription": "Apple Watch Series 6",
         "inStock": "in stock",
         "color": "Gold",
-        "category": "Electronics>Wearables>Smartwatches"
+        "category": "Electronics>Wearables>Smartwatches",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/e55c5de6-9297-4ab1-b940-0ece9f978377.webp"
     },
     {
         "productId": "42",
@@ -459,7 +501,8 @@
         "shortDescription": "Dual Band Gigabit Router",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Networking>Routers"
+        "category": "Electronics>Networking>Routers",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/80249b4d-595e-4963-9139-6f39d166ed02.webp"
     },
     {
         "productId": "M43",
@@ -470,7 +513,8 @@
         "shortDescription": "24.2MP APS-C Camera",
         "inStock": "in stock",
         "color": "Silver",
-        "category": "Electronics>Cameras>Mirrorless Cameras"
+        "category": "Electronics>Cameras>Mirrorless Cameras",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/e55c5de6-9297-4ab1-b940-0ece9f978377.webp"
     },
     {
         "productId": "44",
@@ -481,7 +525,8 @@
         "shortDescription": "Xbox Series X",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Gaming>Gaming Consoles"
+        "category": "Electronics>Gaming>Gaming Consoles",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/80249b4d-595e-4963-9139-6f39d166ed02.webp"
     },
     {
         "productId": "45",
@@ -492,7 +537,8 @@
         "shortDescription": "AirPods Pro",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Audio>Headphones"
+        "category": "Electronics>Audio>Headphones",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/e55c5de6-9297-4ab1-b940-0ece9f978377.webp"
     },
     {
         "productId": "46",
@@ -503,7 +549,8 @@
         "shortDescription": "55\" Oled TV",
         "inStock": "in stock",
         "color": "Silver",
-        "category": "Electronics>TVs"
+        "category": "Electronics>TVs",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/80249b4d-595e-4963-9139-6f39d166ed02.webp"
     },
     {
         "productId": "47",
@@ -514,7 +561,8 @@
         "shortDescription": "DJI Mavic Air 2",
         "inStock": "in stock",
         "color": "Gray",
-        "category": "Electronics>Cameras>Drones"
+        "category": "Electronics>Cameras>Drones",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/e55c5de6-9297-4ab1-b940-0ece9f978377.webp"
     },
     {
         "productId": "48",
@@ -525,7 +573,8 @@
         "shortDescription": "Portable Waterproof Speaker",
         "inStock": "in stock",
         "color": "Blue",
-        "category": "Electronics>Audio>Speakers"
+        "category": "Electronics>Audio>Speakers",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/80249b4d-595e-4963-9139-6f39d166ed02.webp"
     },
     {
         "productId": "49",
@@ -536,7 +585,8 @@
         "shortDescription": "RGB Gaming Mouse",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Computer Accessories>Mice"
+        "category": "Electronics>Computer Accessories>Mice",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/80249b4d-595e-4963-9139-6f39d166ed02.webp"
     },
     {
         "productId": "50",
@@ -547,7 +597,8 @@
         "shortDescription": "GPS Sports Watch",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Wearables>Fitness Trackers"
+        "category": "Electronics>Wearables>Fitness Trackers",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/80249b4d-595e-4963-9139-6f39d166ed02.webp"
     },
     {
         "productId": "S51",
@@ -558,7 +609,8 @@
         "shortDescription": "Wi-Fi Enabled Smart Plug",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Smart Home>Smart Plugs"
+        "category": "Electronics>Smart Home>Smart Plugs",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/995fa7e4-f5dd-488a-b6c7-9b1540b7be9c.webp"
     },
     {
         "productId": "52",
@@ -569,7 +621,8 @@
         "shortDescription": "Wireless Gaming Headset",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Audio>Headphones"
+        "category": "Electronics>Audio>Headphones",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/914ea8f5-cf55-43eb-96ed-303da5dfc6b0.webp"
     },
     {
         "productId": "53",
@@ -580,7 +633,8 @@
         "shortDescription": "Waterproof Wireless Speaker",
         "inStock": "in stock",
         "color": "Red",
-        "category": "Electronics>Audio>Speakers"
+        "category": "Electronics>Audio>Speakers",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/914ea8f5-cf55-43eb-96ed-303da5dfc6b0.webp"
     },
     {
         "productId": "54",
@@ -591,7 +645,8 @@
         "shortDescription": "Slim Combo Set",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Computer Accessories>Keyboard and Mouse Combos"
+        "category": "Electronics>Computer Accessories>Keyboard and Mouse Combos",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/953859ef-4128-4059-ba8e-776cba53a091.webp"
     },
     {
         "productId": "55",
@@ -602,7 +657,8 @@
         "shortDescription": "HD Streaming Media Player",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>TVs>Streaming Devices"
+        "category": "Electronics>TVs>Streaming Devices",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/953859ef-4128-4059-ba8e-776cba53a091.webp"
     },
     {
         "productId": "81",
@@ -613,7 +669,8 @@
         "shortDescription": "Noise-Canceling Over-Ear Headphones",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Audio>Headphones"
+        "category": "Electronics>Audio>Headphones",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/953859ef-4128-4059-ba8e-776cba53a091.webp"
     },
     {
         "productId": "82",
@@ -624,7 +681,8 @@
         "shortDescription": "Wi-Fi Programmable Thermostat",
         "inStock": "in stock",
         "color": "Stainless Steel",
-        "category": "Electronics>Smart Home>Thermostats"
+        "category": "Electronics>Smart Home>Thermostats",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/995fa7e4-f5dd-488a-b6c7-9b1540b7be9c.webp"
     },
     {
         "productId": "83",
@@ -635,7 +693,8 @@
         "shortDescription": "Mechanical RGB Gaming Keyboard",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Computer Accessories>Keyboards"
+        "category": "Electronics>Computer Accessories>Keyboards",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/995fa7e4-f5dd-488a-b6c7-9b1540b7be9c.webp"
     },
     {
         "productId": "84",
@@ -646,7 +705,8 @@
         "shortDescription": "Activity and Sleep Tracker",
         "inStock": "in stock",
         "color": "Purple",
-        "category": "Electronics>Wearables>Fitness Trackers"
+        "category": "Electronics>Wearables>Fitness Trackers",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/58c5555b-46c8-449d-85e9-d8e1ca220997.webp"
     },
     {
         "productId": "85",
@@ -657,7 +717,8 @@
         "shortDescription": "1TB USB 3.1 External Solid State Drive",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Storage>External Solid State Drives"
+        "category": "Electronics>Storage>External Solid State Drives",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/58c5555b-46c8-449d-85e9-d8e1ca220997.webp"
     },
     {
         "productId": "86",
@@ -668,7 +729,8 @@
         "shortDescription": "1080p HD Indoor/Outdoor Camera",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Smart Home>Security Cameras"
+        "category": "Electronics>Smart Home>Security Cameras",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/58c5555b-46c8-449d-85e9-d8e1ca220997.webp"
     },
     {
         "productId": "87",
@@ -679,7 +741,8 @@
         "shortDescription": "Wireless Earpiece",
         "inStock": "in stock",
         "color": "Gray",
-        "category": "Electronics>Audio>Headphones"
+        "category": "Electronics>Audio>Headphones",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/58c5555b-46c8-449d-85e9-d8e1ca220997.webp"
     },
     {
         "productId": "88",
@@ -690,7 +753,8 @@
         "shortDescription": "5\" Touchscreen GPS Device",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Car Accessories>GPS"
+        "category": "Electronics>Car Accessories>GPS",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/58c5555b-46c8-449d-85e9-d8e1ca220997.webp"
     },
     {
         "productId": "89",
@@ -701,7 +765,8 @@
         "shortDescription": "Power Bank with Quick Charge",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Mobile Accessories>Chargers"
+        "category": "Electronics>Mobile Accessories>Chargers",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/58c5555b-46c8-449d-85e9-d8e1ca220997.webp"
     },
     {
         "productId": "W90",
@@ -712,7 +777,8 @@
         "shortDescription": "Xbox Wireless Controller",
         "inStock": "in stock",
         "color": "White",
-        "category": "Electronics>Gaming>Gaming Accessories"
+        "category": "Electronics>Gaming>Gaming Accessories",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/58c5555b-46c8-449d-85e9-d8e1ca220997.webp"
     },
     {
         "productId": "91",
@@ -723,7 +789,8 @@
         "shortDescription": "Wireless In-Car Radio Adapter",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Car Accessories>"
+        "category": "Electronics>Car Accessories>",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/58c5555b-46c8-449d-85e9-d8e1ca220997.webp"
     },
     {
         "productId": "92",
@@ -734,7 +801,8 @@
         "shortDescription": "20MP Point and Shoot Camera",
         "inStock": "in stock",
         "color": "Silver",
-        "category": "Electronics>Cameras>Digital Cameras"
+        "category": "Electronics>Cameras>Digital Cameras",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/58c5555b-46c8-449d-85e9-d8e1ca220997.webp"
     },
     {
         "productId": "93",
@@ -745,7 +813,8 @@
         "shortDescription": "Home Theater Sound System",
         "inStock": "in stock",
         "color": "Black",
-        "category": "Electronics>Audio>Speakers"
+        "category": "Electronics>Audio>Speakers",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/58c5555b-46c8-449d-85e9-d8e1ca220997.webp"
     },
     {
         "productId": "94",
@@ -756,7 +825,8 @@
         "shortDescription": "E-Ink Display, Built-in Light",
         "inStock": "out of stock",
         "color": "White",
-        "category": "Electronics>Computers>eBook Readers"
+        "category": "Electronics>Computers>eBook Readers",
+        "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/58c5555b-46c8-449d-85e9-d8e1ca220997.webp"
     },
     {
         "productId": "95",
@@ -767,7 +837,8 @@
         "shortDescription": "RGB Optical Gaming Mouse",
         "inStock": "out of stock",
         "color": "Black",
-        "category": "Electronics>Computer Accessories"
+        "category": "Electronics>Computer Accessories",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/cf151b48-562a-4847-a5c1-2cf494ba09af.webp"
     },
     {
         "productId": "100",
@@ -778,6 +849,7 @@
         "shortDescription": "Wireless Noise Cancelling Headset",
         "inStock": "out of stock",
         "color": "Black",
-        "category": "Electronics>Audio>Headphones"
+        "category": "Electronics>Audio>Headphones",
+        "ImageUrl" : "https://images.piclumen.com/normal/20241119/1858838376351285249/cf151b48-562a-4847-a5c1-2cf494ba09af.webp"
     }
 ]

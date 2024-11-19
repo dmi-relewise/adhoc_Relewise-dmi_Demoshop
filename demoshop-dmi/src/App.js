@@ -26,7 +26,7 @@ function App() {
     };
 
     updateProductsOnRelewise
-      ? fetchData()
+      ? fetchData() && console.log("Products updated")
       : console.log("Products not updated");
   }, []);
 

@@ -1,5 +1,5 @@
 // src/pages/Frontpage.js
-import { React, Link } from "react";
+import { React} from "react";
 import { useState, useEffect } from "react";
 import { getSettings } from "../utils/SearchProductUtils";
 import { PopularProductsBuilder } from "@relewise/client";
@@ -42,7 +42,7 @@ const Frontpage = () => {
         {responsePopoular.map((product) => (
           <div key={product.productId} className="p-1 m-4 card w-25">
             <a href={`/product/${product.productId}`}>
-              <img src="/Ephoto.jpeg" className="w-100"></img>
+              <img src={product.data.ImageUrl.value || "/Ephoto.jpeg"} className="w-75"></img>
             </a>
             <h4 className="m-auto">{product.displayName}</h4>
             <p className="m-auto">{product.data.ShortDescription.value}</p>
