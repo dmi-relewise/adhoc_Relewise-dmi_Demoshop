@@ -23,7 +23,7 @@ const ProductDetailsPage = () => {
         console.error("Error fetching data:", error);
       }
     };
-
+    console.log(products)
     pdpTracker();
   }, [productId, tracker]);
 
@@ -79,19 +79,12 @@ const ProductDetailsPage = () => {
 
   return (
     <div className="container p-5 text-center">
-      <img src="/Ephoto.jpeg" alt="image" className="w-50" />
+      <img src={product.ImageUrl} alt="image" className="w-50" />
       <p>{product.productName}</p>
       <p className="fw-bold">{product.salesPrice}</p>
       <div>
         <label htmlFor="quantity">Quantity: </label>
-        <input
-          type="number"
-          id="quantity"
-          min="1"
-          value={quantity}
-          onChange={handleQuantityChange}
-          className="form-control w-25 d-inline"
-        />
+        <input type="number" id="quantity" min="1" value={quantity} onChange={handleQuantityChange} className="form-control w-25 d-inline" />
       </div>
       <button className="btn btn-dark mt-2" onClick={addToCart}>
         Add to Cart

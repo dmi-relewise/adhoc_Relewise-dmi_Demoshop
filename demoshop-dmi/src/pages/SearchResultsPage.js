@@ -125,7 +125,7 @@ const SearchResultsPage = () => {
         {products.map((product) => (
           <div key={product.productId} className="mb-3 w-50">
             <Link to={`/product/${product.productId}`}>
-              <img src="/Ephoto.jpeg" className="rounded-4 w-75" alt={product.displayName} />
+              <img src={product.data.ImageUrl.value} className="rounded-4 w-75" alt={product.displayName} />
             </Link>
             <h5 className="card-title">{product.displayName}</h5>
             <p className="card-text fw-bold">{product.brand.displayName}</p>

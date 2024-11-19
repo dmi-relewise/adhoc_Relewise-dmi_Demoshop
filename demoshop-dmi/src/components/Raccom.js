@@ -55,25 +55,31 @@ const Raccom = () => {
     }, [productId]);
 
     return (
-        <div className=" container p-2 d-flex flex-wrap align-items-center justify-content-center">
-            <h2 className='text-center'>Recommended Products (ProductsViewedAfterViewingProductRequest)</h2>
+      <div className=" container p-2 d-flex flex-wrap align-items-center justify-content-center">
+        <h2 className="text-center">Recommended Products (ProductsViewedAfterViewingProductRequest)</h2>
 
-            {raccArray.length > 1 && raccArray.map((product) => (
-                <div key={product.productId} className="card-body p-1 mb-4 w-25">
-                    <Link to={`/product/${product.productId}`}><img src="/Ephoto.jpeg" className="rounded-4 w-75" alt={product.productName} /></Link>
-                    <h5 className="card-title">{product.displayName}</h5>
-                    <p className="card-text fw-bold">${product.salesPrice}</p>
-                </div>
-            ))}
-            <h2 className='text-center w-100 mt-5'>Recommended Products (PurchasedWithProductRequest)</h2>
-            {purchasedWith.length > 1 && purchasedWith.map((product) => (
-                <div key={product.productId} className="card-body p-1 mb-4 w-25">
-                    <Link to={`/product/${product.productId}`}><img src="/Ephoto.jpeg" className="rounded-4 w-75" alt={product.productName} /></Link>
-                    <h5 className="card-title">{product.displayName}</h5>
-                    <p className="card-text fw-bold">${product.salesPrice}</p>
-                </div>
-            ))}
-        </div>
+        {raccArray.length > 1 &&
+          raccArray.map((product) => (
+            <div key={product.productId} className="card-body p-1 mb-4 w-25">
+              <Link to={`/product/${product.productId}`}>
+                <img src={product.data.ImageUrl.value} className="rounded-4 w-75" alt={product.productName} />
+              </Link>
+              <h5 className="card-title">{product.displayName}</h5>
+              <p className="card-text fw-bold">${product.salesPrice}</p>
+            </div>
+          ))}
+        <h2 className="text-center w-100 mt-5">Recommended Products (PurchasedWithProductRequest)</h2>
+        {purchasedWith.length > 1 &&
+          purchasedWith.map((product) => (
+            <div key={product.productId} className="card-body p-1 mb-4 w-25">
+              <Link to={`/product/${product.productId}`}>
+                <img src={product.data.ImageUrl.value} className="rounded-4 w-75" alt={product.productName} />
+              </Link>
+              <h5 className="card-title">{product.displayName}</h5>
+              <p className="card-text fw-bold">${product.salesPrice}</p>
+            </div>
+          ))}
+      </div>
     );
 };
 
