@@ -8,29 +8,15 @@ export const getSettings = (displayedAtLocation) => ({
   user: getUser() || UserFactory.anonymous(),
 });
 
-// export const createProductSearchBuilder = (settings, searchTerm, pageSize = 30, page = 1) => {
-//   const builder = new ProductSearchBuilder(settings)
-//     .setSelectedProductProperties({
-//       displayName: true,
-//       pricing: true,
-//       brand: true,
-//       dataKeys: ["ShortDescription", "InStock"],
-//       AllData: true,
-//     })
-//     .pagination((p) => p.setPageSize(pageSize).setPage(page));
-
-//   if (searchTerm) {
-//     builder.setTerm(searchTerm);
-//   }
-//   return builder;
-// };
-
 export const createProductSearchBuilder = (
   settings,
   searchTerm,
-  pageSize = 30,
+  pageSize = 100,
   page = 1,
-  configureFacets // A callback function to configure facets
+  configureFacets,
+  retailMediaLocationKey = "TOTEM_LOCATION",
+  retailMediaVariationKey = "TOP",
+  retailMediaPlacements = "TOTEM"
 ) => {
   const builder = new ProductSearchBuilder(settings)
     .setSelectedProductProperties({
@@ -40,6 +26,19 @@ export const createProductSearchBuilder = (
       allData: true,
       dataKeys: ["ShortDescription", "InStock"],
       categoryPaths: true,
+    })
+    .setRetailMedia({
+      location: {
+        key: retailMediaLocationKey,
+        variation: {
+          key: retailMediaVariationKey,
+        },
+        placements: [
+          {
+            key: retailMediaPlacements,
+          },
+        ],
+      },
     })
     .pagination((p) => p.setPageSize(pageSize).setPage(page));
 

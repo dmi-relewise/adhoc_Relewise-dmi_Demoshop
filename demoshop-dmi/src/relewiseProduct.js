@@ -45,7 +45,7 @@ export async function createProducts() {
         // the exact same value for all products
         ImportedAt: DataValueFactory.number(date),
         InStock: DataValueFactory.boolean(element.inStock === "in stock"),
-        ImageUrl: DataValueFactory.multilingual([{ language: "en", value: element.ImageUrl }]),
+        ImageUrl: DataValueFactory.string(element.ImageUrl),
         // Add any additional fields you would want returned from Relewise
       });
 

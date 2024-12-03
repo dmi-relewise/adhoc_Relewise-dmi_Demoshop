@@ -12,9 +12,11 @@ import Footer from "./components/Footer";
 import { createProducts } from "./relewiseProduct";
 import CookiebotScript from "./CookiebotScript";
 import Header from "./components/Header";
+import ControlPanel from "./pages/ControlPanel";
+import SingleForm from "./pages/SingleForm";
 
 function App() {
-  const updateProductsOnRelewise = false;
+  const updateProductsOnRelewise = true;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,14 +28,14 @@ function App() {
     };
 
     updateProductsOnRelewise
-      ? fetchData() && console.log("Products updated")
+      ? fetchData()
       : console.log("Products not updated");
   }, []);
 
   CookiebotScript();
   return (
     <Router>
-      <div className="App">
+      <div className="App bg-light">
         <Header />
         <Routes>
           <Route path="/" element={<Frontpage />} />
@@ -42,6 +44,8 @@ function App() {
           <Route path="/product/:productId" element={<ProductDetailsPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/order-receipt" element={<OrderReceiptPage />} />
+          <Route path="/ctrl-panel" element={<ControlPanel />} />
+          <Route path="/ctrl-panel/:id" element={<SingleForm />} />
         </Routes>
         <Footer />
       </div>

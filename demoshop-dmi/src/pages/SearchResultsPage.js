@@ -4,6 +4,7 @@ import { getSettings, createProductSearchBuilder, createSearcher } from "../util
 
 const SearchResultsPage = () => {
   const [products, setProducts] = useState([]);
+  const [RetailMediaProducts, setRetailMediaProducts] = useState([]);
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const location = useLocation();
@@ -31,7 +32,7 @@ const SearchResultsPage = () => {
         }
 
         if (inStockOnly) {
-          f.addProductDataBooleanValueFacet("InStock", 'Product', [true]);
+          f.addProductDataBooleanValueFacet("InStock", "Product", [true]);
         }
       });
       const searcher = createSearcher();
@@ -39,7 +40,12 @@ const SearchResultsPage = () => {
       const loadData = async () => {
         try {
           const response = await searcher.searchProducts(builder.build());
-          setProducts(response.results);
+          const retailMediaProductIds = new Set(response.retailMedia.placements.TOTEM.results.map((product) => product.promotedProduct.result.productId));
+
+          const filteredProducts = response.results.filter((product) => !retailMediaProductIds.has(product.productId));
+
+          setProducts(filteredProducts);
+          setRetailMediaProducts(response.retailMedia.placements.TOTEM.results);
 
           const uniqueBrandsSet = new Set();
           const categoryList = [];
@@ -122,6 +128,18 @@ const SearchResultsPage = () => {
       </div>
 
       <div className="d-flex flex-wrap">
+        {RetailMediaProducts?.map((product) => (
+          <div key={product.promotedProduct.result.productId} className="mb-3 w-50">
+            <div className="mb-2 ms-1 text-primary fw-bold">Sponsored</div>
+            <Link to={`/product/${product.promotedProduct.result.productId}`}>
+              <img src={product.promotedProduct.result.data.ImageUrl.value} className="rounded-4 w-75" alt={product.displayName} />
+            </Link>
+            <h5 className="card-title">{product.promotedProduct.result.displayName}</h5>
+            <p className="card-text fw-bold">{product.promotedProduct.result.brand.displayName}</p>
+            <p className="card-text fw-bold">${product.promotedProduct.result.salesPrice}</p>
+          </div>
+        ))}
+
         {products.map((product) => (
           <div key={product.productId} className="mb-3 w-50">
             <Link to={`/product/${product.productId}`}>

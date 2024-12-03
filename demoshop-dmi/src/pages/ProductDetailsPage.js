@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import jsonData from "../product.json";
 import getUser from "../userFile";
 import Raccom from "../components/Raccom";
-import { tracker} from "../utils/Utils";
+import { tracker } from "../utils/Utils";
+import { Tracker, User, UserUpdate } from "@relewise/client";
 
 const ProductDetailsPage = () => {
   const { productId } = useParams();
@@ -11,21 +12,38 @@ const ProductDetailsPage = () => {
   const products = JSON.parse(JSON.stringify(jsonData));
   const product = products.find((item) => item.productId === productId);
 
+  // Extract Klaviyo ID from the URL
+  const getKlaviyoIdFromUrl = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get("klaviyo_id");
+  };
+
+  // Get the user and Klaviyo ID
+  const user = getUser();
+  const klaviyoId = getKlaviyoIdFromUrl() || null;
+  const userEmail = "dmi@relewise.com"; 
 
   useEffect(() => {
     const pdpTracker = async () => {
       try {
+        // Track the product view and include Klaviyo ID
         await tracker.trackProductView({
           productId,
-          user: getUser(),
+          user: {
+            ...user,
+            Identifiers: {
+              KlaviyoID: klaviyoId, // Add Klaviyo ID
+            },
+            Email: userEmail, 
+          },
         });
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
-    console.log(products)
+    console.log(products);
     pdpTracker();
-  }, [productId, tracker]);
+  }, [productId, klaviyoId, user]);
 
   const cleanPrice = (price) => {
     if (typeof price === "string") {
@@ -59,9 +77,7 @@ const ProductDetailsPage = () => {
       quantity: item.quantity,
     }));
 
-    const subtotalAmount = lineItems
-      .reduce((total, item) => total + item.lineTotal, 0)
-      .toFixed(2);
+    const subtotalAmount = lineItems.reduce((total, item) => total + item.lineTotal, 0).toFixed(2);
 
     try {
       await tracker.trackCart({
@@ -70,7 +86,13 @@ const ProductDetailsPage = () => {
           amount: parseFloat(subtotalAmount),
           currency: "usd",
         },
-        user: getUser(),
+        user: {
+          ...user,
+          Identifiers: {
+            KlaviyoID: klaviyoId, // Add Klaviyo ID
+          },
+          Email: userEmail,
+        },
       });
     } catch (error) {
       console.error("Error tracking cart:", error);
