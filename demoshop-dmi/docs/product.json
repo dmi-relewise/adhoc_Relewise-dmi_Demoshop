@@ -10,11 +10,11 @@
     "color": "Black",
     "category": "Electronics>TVs",
     "ImageUrl": "https://images.piclumen.com/normal/20241119/1858838376351285249/6701baba-db84-4b64-8e21-8361af57a795.webp",
-    "disabled": true
+    "disabled": false
   },
   {
     "productId": "2",
-    "productName": "Bluetooth Speaker",
+    "productName": "Bluetooth ---- Speaker",
     "brandName": "JBL",
     "salesPrice": "$89.99",
     "listPrice": "$99.99",
